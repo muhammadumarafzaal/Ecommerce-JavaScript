@@ -18,7 +18,7 @@ StyleHub is a high-performance, responsive e-commerce web application meticulous
 
 ## 🚀 Live Demo
 
-Check out the live project here: [Live Demo Link (If applicable)]
+Check out the live project here: https://ecommerce-java-script-khaki.vercel.app/
 
 ## 🛠️ Technology Stack
 
