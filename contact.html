@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - StyleHub</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar-container">
+        <div class="container">
+            <div class="navigationbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px" alt="StyleHub Logo"></a>
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="#" id="accountBtn">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <img src="images/cart.png" width="30px" height="30px" alt="Cart" class="cart-icon" id="cartBtn">
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Header -->
+    <div class="contact-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message!</p>
+        </div>
+    </div>
+
+    <!-- Contact Content -->
+    <div class="small-container">
+        <div class="row contact-row">
+            <!-- Contact Form -->
+            <div class="col-2">
+                <h2>Send us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required id="contactName">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required id="contactEmail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required id="contactSubject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required id="contactMessage"></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+                <div id="formMessage" style="margin-top: 20px;"></div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-2">
+                <h2>Contact Information</h2>
+                
+                <div class="contact-info-box">
+                    <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+                    <p>StyleHub Headquarters<br>
+                    123 Fashion Street<br>
+                    Karachi, Pakistan 75001</p>
+                </div>
+
+                <div class="contact-info-box">
+                    <h4><i class="fas fa-phone"></i> Phone</h4>
+                    <p><a href="tel:+923001234567">+92 (300) 123-4567</a><br>
+                    <a href="tel:+923002345678">+92 (300) 234-5678</a></p>
+                </div>
+
+                <div class="contact-info-box">
+                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                    <p><a href="mailto:info@stylehub.com">info@stylehub.com</a><br>
+                    <a href="mailto:support@stylehub.com">support@stylehub.com</a></p>
+                </div>
+
+                <div class="contact-info-box">
+                    <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+
+                <h3 style="margin-top: 30px;">Follow Us</h3>
+                <div class="social-links-contact">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-footer">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                </div>
+                <div class="col-footer">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close" id="closeCart">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Total: </strong><span id="totalPrice">0</span> PKR
+            </div>
+            <button class="button" style="width: 100%; margin-top: 20px;">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login / Sign Up</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="button">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
