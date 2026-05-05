@@ -1,0 +1,6 @@
+# Ignore roll numbers file
+Names and Roll Numbers.txt
+
+# OS files
+Thumbs.db
+.DS_Store
